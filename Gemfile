@@ -1,28 +1,37 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.3'
+gem 'rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-	gem 'sqlite3', '1.3.5'
-	gem 'rspec-rails' , '2.9.0'
+	gem 'sqlite3'
+	gem 'rspec-rails'
+	gem 'guard-rspec'
 end
 
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
- 	gem 'sass-rails', '3.2.4'
-	gem 'coffee-rails', '3.2.2'
-	gem 'uglifier' , '1.2.3'
+ 	gem 'sass-rails'
+	gem 'coffee-rails'
+	gem 'uglifier'
 end
 
 gem 'jquery-rails'
 
 group :test do
-	gem 'capybara' , '1.1.2'
+	gem 'rspec-rails'
+	gem 'capybara'
+	gem 'rb-fchange'
+	gem 'rb-notifu'
+	gem 'win32-process', :require => 'win32/process'
+	gem 'win32console', '~> 1.3.0'
+	gem 'wdm', '~> 0.1'
+	gem 'guard-spork', '1.5.0'
+	gem 'spork', '~> 1.0rc'
 end
 
 # To use ActiveModel has_secure_password
