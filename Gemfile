@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
+gem 'gravatar_image_tag'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -35,6 +36,7 @@ group :test do
 	gem 'wdm', '~> 0.1'
 	gem 'guard-spork', '1.5.0'
 	gem 'spork', '~> 1.0rc'
+	gem 'factory_girl_rails'
 end
 
 # To use ActiveModel has_secure_password
