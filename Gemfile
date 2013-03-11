@@ -19,7 +19,7 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
- 	gem 'sass-rails'
+	gem 'sass-rails'
 	gem 'coffee-rails'
 	gem 'uglifier'
 end
@@ -37,6 +37,10 @@ group :test do
 	gem 'guard-spork', '1.5.0'
 	gem 'spork', '~> 1.0rc'
 	gem 'factory_girl_rails'
+end
+
+group :production do
+	gem 'pg', '0.12.2'
 end
 
 # To use ActiveModel has_secure_password
